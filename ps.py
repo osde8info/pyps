@@ -1,12 +1,13 @@
 import os
-from PIL import Image
-from PIL.ExifTags import TAGS
 import shutil
 import time
 
+from PIL import Image
+from PIL.ExifTags import TAGS
+
 # This is your original photo folder
-localPath = 'H:/PhotosToSort'
-destinationPath = 'H:/SortedPhoto'
+localPath = 'in'
+destinationPath = 'out'
 _TAGS_r = dict(((v, k) for k, v in TAGS.items()))
 totalFiles = 0
 processedPhotos = 0
